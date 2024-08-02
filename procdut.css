@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: raleway;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+.container{
+  max-width: 100%;
+  height: 100vh;
+  background-color: beige;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  max-width: 45rem;
+  height: 30rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+  
+}
+
+.perfume-img-holder{
+  width:75rem;
+  height: 30rem;
+}
+.perfume-img{
+  width: 22rem;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.mobile-img{
+  display: none;
+}
+.white-card{
+margin-right: 25px;
+margin-top: 20px;
+}
+
+.text-area{
+  width: 20rem;
+  height: 22rem;
+  background-color: white;
+}
+.product-category{
+  font-family: jura;
+  letter-spacing: 5px;
+}
+.card-heading{
+  font-family: Abril Fatface;
+  font-size: 2.4rem;
+}
+.text-description{
+  font-family: Quicksand;
+  font-size: 1.2rem;
+}
+.prices{
+  width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    top: -50px;
+}
+.real-price{
+  color: rgb(6, 88, 6);
+  font-family: Abril Fatface;
+  font-size: 2.2rem;
+}
+.discounted-price{
+  font-family: Quicksand;
+  text-decoration:line-through;
+  color: rgb(88, 87, 87);
+  font-size: 1rem;
+}
+.card-link{
+  width: 100%;
+  height: 70px;
+  background-color: rgb(3, 84, 16);
+  margin: -40px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transition: all 250ms 250ms ease-out;
+}
+.card-link svg{
+  width: 30px;
+  color: white;
+}
+.card-button{
+  text-decoration: none;
+  font-family: tangerine;
+  font-size: 2rem;
+  color: white;
+  
+}
+
+.card-link:hover{
+  background-color: green;
+}
+
+@media  screen and (max-width: 425px) {
+  .body{
+    overflow-x: hidden;
+  }
+  .container{
+    max-width: 100%;
+    height: 100vh;
+  }
+  .card{
+    max-width: 20rem;
+    height: 90%;
+  }
+  .white-card{
+    margin: 0;
+  }
+  .d-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .perfume-img-holder{
+    width: 100%;
+    height: auto;
+  }
+  .perfume-img{
+    display: none;
+  }
+  .mobile-img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .product-category{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  .card-heading{
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  .text-description{
+    color: #484848;
+    font-weight: 500;
+    margin: 1.2rem 0rem 0rem 1.5rem;
+  }
+  .prices{
+    width: 90%;
+    height: 3rem;
+    gap: 2rem;
+    position: relative;
+    top: -6rem;
+    margin-left: 1.5rem;
+  }
+  .card-link{
+    width: 90%;
+    height: 40px;
+    margin: -5.5rem 0rem 0rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .card-link svg{
+    width: 1.5rem;
+  }
+  .card-button{
+    font-size: 1.5rem;
+  }
+}
+
